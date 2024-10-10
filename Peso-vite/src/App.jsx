@@ -29,6 +29,7 @@ const IMCCalculator = () => {
     } else {
       setMessage('Por favor, preencha os campos de peso e altura.');
     }
+  
   };
 
   return (
