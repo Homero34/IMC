@@ -23,12 +23,14 @@ const IMCCalculator = () => {
         setMessage('Peso normal');
       } else if (imcValue >= 25 && imcValue <= 29.9) {
         setMessage('Sobrepeso');
-      } else {
+      } else if (imcValue >=30 && imcValue <= 44.9){
         setMessage('Obesidade');
+      }else if(imcValue >=50 && imcValue <=80){
+        setMessage('Verifica Peso e Altura Corretos')
       }
-    } else {
+    } else  {
       setMessage('Por favor, preencha os campos de peso e altura.');
-    }
+    } 
   
   };
 
